@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ToggleButton.css";
+import {AiOutlinePlus,AiOutlineMinus} from "react-icons/ai"
 
 const ToggleButton = () => {
   const HorseRegistration = [
@@ -28,6 +29,14 @@ const ToggleButton = () => {
     setExpandedButton((prevButton) =>
       prevButton === buttonNumber ? null : buttonNumber
     );
+  };
+  
+  const getButtonIcon = (buttonNumber) => {
+    if (isButtonExpanded(buttonNumber)) {
+      return <AiOutlineMinus />;
+    } else {
+      return <AiOutlinePlus />;
+    }
   };
 
   const isButtonExpanded = (buttonNumber) => {
@@ -183,7 +192,9 @@ const ToggleButton = () => {
     <div className="container" style={{ display: "flex" }}>
       <div className="buttons">
         <button onClick={() => handleButtonClick(1)}>
-          <b>Horse Information</b>
+          <b style={{width:'100%'}}>Horse Information <b style={{float:'right'}}>{getButtonIcon(1)}</b></b>
+          {/* <FontAwesomeIcon icon="fa-solid fa-plus" /> */}
+          
         </button>
         <div
           className={
@@ -193,7 +204,7 @@ const ToggleButton = () => {
           {isButtonExpanded(1) && getContent(1)}
         </div>
         <button onClick={() => handleButtonClick(2)}>
-          <b>FEI Registration</b>
+          <b style={{width:'100%'}}>FEI Registration <b style={{float:'right'}}>{getButtonIcon(2)}</b></b>
         </button>
         <div
           className={
@@ -203,7 +214,7 @@ const ToggleButton = () => {
           {isButtonExpanded(2) && getContent(2)}
         </div>
         <button onClick={() => handleButtonClick(3)}>
-          <b>Owner Information</b>
+          <b style={{width:'100%'}}>Owner Information <b style={{float:'right'}}>{getButtonIcon(3)}</b></b>
         </button>
         <div
           className={
@@ -213,7 +224,7 @@ const ToggleButton = () => {
           {isButtonExpanded(3) && getContent(3)}
         </div>
         <button onClick={() => handleButtonClick(4)}>
-          <b>Trainer Information</b>
+          <b style={{width:'100%'}}>Trainer Information <b style={{float:'right'}}>{getButtonIcon(4)}</b></b>
         </button>
         <div
           className={
