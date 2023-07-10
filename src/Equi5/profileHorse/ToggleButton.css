@@ -1,0 +1,31 @@
+.contents {
+    margin-top: 0%;
+    font-size: 1.5rem;
+    padding: 10px;
+    /* background-color: #e3d9c1; */
+
+}
+
+.container .buttons {
+    width: 100%;
+}
+
+.container .buttons button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: #e3d9c1;
+    border: none;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    
+}

@@ -1,0 +1,32 @@
+.horse-profile{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    background-color: #000;
+}
+.horse-image{
+    flex: 1 1 300px;
+    margin: 10px;
+
+    border: 2px solid;
+    /* width: 32%; */
+    /* margin: auto; */
+}
+
+.horse-image img{
+    width: 70%;
+    /* height: 100%; */
+    margin: 0 15%;
+    border-radius: 31px;
+}
+.horse-description{
+    flex: 1 1 300px;
+    margin: 10px;
+    /* padding: 2rem; */
+    color: #bebb9e;
+
+    /* width: 50%; */
+    /* border: 2px solid; */
+    /* margin: auto; */
+}

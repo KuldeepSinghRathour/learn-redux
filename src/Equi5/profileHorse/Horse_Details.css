@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    background: #000;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+.detail-container{
+    display: flex;
+    /* visibility: hidden; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 2px solid;
+    color: #bebb9e;
+    margin-bottom: 2rem;
+    /* background-color: #bebb9e; */
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.detail-container .detail-container-left{
+    /* border: 1px solid; */
+    flex: 1 1 200px;
+    font-size: 1rem;
+    padding-left: 3rem;
+}
+.detail-container .detail-container-right{
+    /* border: 1px solid; */
+    flex: 1 1 200px;
+    padding-left: 3rem;
+
+}
+/* hr{
+    width: 40%;
+    margin-left: 0rem;
+} */
+
+.Horse-Profile{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    /* border: 2px solid; */
+    color: #bebb9e;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.left-menu button{
+    color: #bebb9e;
+}
+.main-div{
+    display: flex;
+    justify-content: space-around;
+}
